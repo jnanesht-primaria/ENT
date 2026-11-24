@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ENT Hospital Management Portal</title>
+<link rel="stylesheet" href="styles.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+<body>
+<div class="layout">
+  <aside id="sidebar" class="sidebar">
+    <div class="brand">
+      <div class="brand-logo" id="brandLogo">E</div>
+      <div><div class="brand-name" id="brandName">ENT Hospital</div><div class="brand-sub">Management Portal</div></div>
+    </div>
+    <nav id="nav"></nav>
+    <div class="sidebar-foot">Demo Version &middot; Super Admin</div>
+  </aside>
+  <div class="scrim" data-act="toggleMenu"></div>
+
+  <div class="main">
+    <header class="topbar">
+      <button class="icon-btn menu-btn" data-act="toggleMenu" aria-label="Menu">&#9776;</button>
+      <h1 id="pageTitle">Dashboard</h1>
+      <div class="top-search"><input id="globalSearch" type="search" placeholder="Search patients by name, ID or mobile…"></div>
+      <div class="top-right">
+        <span class="top-date" id="topDate"></span>
+        <div class="avatar-chip"><span class="avatar">SA</span><span class="avatar-name">Super Admin</span></div>
+      </div>
+    </header>
+    <main id="view" class="view"></main>
+  </div>
+</div>
+
+<div id="modal" class="modal"></div>
+<div id="toast" class="toast-wrap"></div>
+<div id="printArea"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
